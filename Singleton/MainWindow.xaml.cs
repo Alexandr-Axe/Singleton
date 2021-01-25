@@ -31,6 +31,7 @@ namespace Singleton
             TBInformace.Text = "";
             TBInformace.Text = SI.View(0);
             TBInformace.Text = SI.View(1);
+            TBInformace.Text = SI.View(2);
         }
 
         public class SingletonInformation 
@@ -56,7 +57,7 @@ namespace Singleton
                 Seznam = new Dictionary<int, string[]>();
                 Seznam[0] = Create("Alexandr", "Sekera", datumAlex, CalculatePIN(datumAlex));
                 Seznam[1] = Create("Petr", "Jelínek", datumPetr, CalculatePIN(datumPetr));
-                Seznam[2] = Create("Alexandr", "Sekera", datumJirka, CalculatePIN(datumJirka));
+                Seznam[2] = Create("Jirka", "Měřínský", datumJirka, CalculatePIN(datumJirka));
             }
             string CalculatePIN(string datum) 
             {
